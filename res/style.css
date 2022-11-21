@@ -1,0 +1,187 @@
+#_copy {
+    align-items: center;
+    background: #4494d5;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 13px;
+    height: 30px;
+    justify-content: center;
+    position: absolute;
+    width: 60px;
+    z-index: 1000
+}
+
+#select-tooltip,
+#sfModal,
+.modal-backdrop,
+div[id^=reader-helper] {
+    display: none !important
+}
+
+.modal-open {
+    overflow: auto !important
+}
+
+._sf_adjust_body {
+    padding-right: 0 !important
+}
+
+.super_copy_btns_div {
+    position: fixed;
+    width: 154px;
+    left: 10px;
+    top: 45%;
+    background: #e7f1ff;
+    border: 2px solid #4595d5;
+    font-weight: 600;
+    border-radius: 2px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    z-index: 5000
+}
+
+.super_copy_btns_logo {
+    width: 100%;
+    background: #4595d5;
+    text-align: center;
+    font-size: 12px;
+    color: #e7f1ff;
+    line-height: 30px;
+    height: 30px
+}
+
+.super_copy_btns_btn {
+    display: block;
+    width: 128px;
+    height: 28px;
+    background: #7f5711;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    border: 0;
+    outline: 0;
+    margin: 8px auto;
+    font-weight: 700;
+    cursor: pointer;
+    opacity: .9
+}
+
+.super_copy_btns_btn:hover {
+    opacity: .8
+}
+
+.super_copy_btns_btn:active {
+    opacity: 1
+}
+
+.scroll-x {
+    /* background-color: #4494d5; */
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+    /* flex-wrap: nowrap; */
+    /* overflow-x: auto; */
+
+    /* white-space: nowrap; */
+    /* height: 128px; */
+}
+
+/*去除滚动条*/
+/* ::-webkit-scrollbar {
+display: none;
+} */
+
+
+.tab {
+    /* background-color: #1EAB42; */
+    padding: 0 20px;
+    /* flex-shrink: 0; */
+}
+
+.indicator {
+    width: 20px;
+    height: 4px;
+    background: #1EAB42;
+    margin: -4px auto 0 auto;
+}
+
+
+
+button {
+    position: fixed; 
+    width: 54px;
+    height: 54px;
+    right: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-image: url(play.png);
+    background-size:54px 54px; 
+    border: 0;
+    background-color: transparent;
+    z-index: 9999;
+}
+
+
+p {
+    font-size: 20px;
+    width: 500px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+img {
+    /* width: 100px; */
+    height: 100px;
+}
+
+.rt{
+    z-index: -1;
+    position: fixed;
+    font-family:"华文楷体";  /*设置字体*/
+    /* padding:30px;   设置内边距 */
+    /* background:#add8e680;  设置背景颜色 */
+    font-size: 36px;  /*设置文字大小*/
+    /* color:#ffffff;  设置文字颜色 */
+    text-align: top; /*设置文字居中*/
+    border:1px solid #CCCCCC00;  /*设置元素边框*/
+    width: 100%;
+    height: 100%;
+    box-shadow:3px 3px 6px #99999900;  /*设置边框阴影*/
+    background: url(bg.jpg);
+    /* object-fit: cover; */
+    background-size: cover;
+}
+
+.ttst{
+    font-family:"华文楷体";  /*设置字体*/
+    margin:10px auto;   /*设置外边距*/
+    padding:30px;   /*设置内边距*/
+    background:#add8e680;  /*设置背景颜色*/
+    font-size: 36px;  /*设置文字大小*/
+    color:#ffffff;  /*设置文字颜色*/
+    text-align: top; /*设置文字居中*/
+    border:1px solid #CCCCCC00;  /*设置元素边框*/
+    box-shadow:3px 3px 6px #99999900;  /*设置边框阴影*/
+    writing-mode:vertical-rl;  /*设置以垂直方式从右向左显示*/
+    line-height: 1.5;
+ }
+
+
+.copyright-footer{
+    z-index: 9999;
+    background-color: rgba(43, 166, 166, 0.5);
+    color: #FFF;
+    /* bottom: 0; */
+    left: 100px;
+    /* right: 0; */
+    text-align: center;
+    /* height: 40px; */
+    padding: 10px;
+    line-height: 20px;
+}
