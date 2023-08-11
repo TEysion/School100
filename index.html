@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+	<title>百年校庆</title>
+
+	<meta name="full-screen" content="yes">
+	<meta name="x5-fullscreen" content="true">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+	<script src="./res/jquery.min.js" charset="utf-8"></script>
+	<script src="./res/jquery.rotate.js" charset="utf-8"></script>
+	<script src="./res/move.js" charset="utf-8"></script>
+
+	<link href="./res/logo.jpg" rel="icon" type="image/x-ico">
+	<link rel="stylesheet" href="./res/style.css" type="text/css">
+</head>
+
+<body style="height: 40000px;">
+	<button id="btn" onclick="start('./res/1.mp3')" style="right: 100; z-index: 9999; position: fixed;"></button>
+	<div class="rt">
+		<audio id="audio" src="./res/1.mp3"></audio>
+		<script>
+			var zd_height = 500000;
+			var hhh = 0;
+			function start(path) {
+				var h = $(document).height() - $(window).height();
+				var audioEle = document.getElementById("audio");
+				if (audioEle.paused) { /*如果已经暂停*/
+					audioEle.play();   //播放
+					scroll_auto();
+					$("#btn").rotate({ animateTo: 360 * 100, duration: 1000000 });
+				} else {
+					audioEle.pause();  //暂停
+					$("html,body").stop(true);
+					$("#btn").stopRotate();
+				}
+			}
+
+			function scroll_auto() {
+				var gdt_height = $(window).scrollTop();//当前滚动条高度
+				var kj_height = $(window).height();//浏览器可见区域高度
+				var body_height = $(document).height();//body实际高度
+				$("html,body").animate({ scrollTop: body_height }, 100000);
+			}
+
+		</script>
+
+		<div class="ttst" style="opacity: 0; z-index: 0; top: 10000; position: fixed; margin: 0;">
+			<a>
+				百载风雨兼程，<br>
+				百年青春如歌。<br>
+				年华流转，<br>
+				不变的是学者心；<br>
+				岁月如流，<br>
+				永恒的是师者魂。<br>
+				用生命启迪智慧，<br>
+				用爱心滋养希望。<br>
+				百载，创造金色辉煌；<br>
+				百年，谱写绚丽华章。
+			</a>
+		</div>
+	</div>
+	<script src="./res/screen.js" charset="utf-8"></script>
+</body>
+<div style="height: 40000px;"></div>
+<footer class="copyright-footer">作者 ✪ codinghero258</footer>
+
+</html>
